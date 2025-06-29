@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { navLinks } from "../constants/index";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { navLinks } from "../constants/index";
 
+gsap.registerPlugin();
 const Navbar = () => {
   useGSAP(() => {
     const navtween = gsap.timeline({
@@ -18,7 +18,7 @@ const Navbar = () => {
         background: "transparent",
       },
       {
-        backgroundColor: "#0000050",
+        backgroundColor: "#00000050",
         backgroundFilter: "blur(10px)",
         duration: 1,
         ease: "power1.inOut",
@@ -30,14 +30,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2">
-          <div className="relative">
-            <Image
-              src={"/images/logo.png"}
-              fill
-              className="object-cover"
-              alt="logo"
-            />
-          </div>
+          <img src={"/images/logo.png"} alt="logo" />
           <p>Velvet Pour</p>
         </a>
 
