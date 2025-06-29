@@ -50,8 +50,8 @@ const Hero = () => {
           scrub: true,
         },
       })
-      .to(".right-leaf", { y: 400 }, 0)
-      .to(".left-leaf", { y: -400 }, 0);
+      .to(".right-leaf", { y: 100 }, 0)
+      .to(".left-leaf", { y: -100 }, 0);
 
     return () => {
       heroSplit.revert();

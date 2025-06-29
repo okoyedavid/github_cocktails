@@ -1,11 +1,13 @@
-import Home from "./_components/Homepage";
+import CockTails from "./_components/Cocktails";
+import Hero from "./_components/Hero";
+import Navbar from "./_components/Navbar";
 
 export default function Page() {
   return (
-    <div>
-      <div>
-        <Home />
-      </div>
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <CockTails />
+    </main>
   );
 }
